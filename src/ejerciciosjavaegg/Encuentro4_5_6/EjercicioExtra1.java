@@ -11,7 +11,15 @@ import java.util.Scanner;
 public class EjercicioExtra1 {
     public static void main(String[] args) {
         Scanner leer = new Scanner(System.in);
-        System.out.println("Ingrese los minutos a convertir");
-        int minutos = leer.nextInt();
+        int min;
+        int hr;
+        int dia;
+        System.out.println("Ingrese el tiempo en minutos:");
+        min= leer.nextInt();
+        hr= (min%1440)/60;
+        System.out.println("Equivalen a "+ hr + " Horas");
+        dia= min/1440;
+        System.out.println("Equivalen a "+ dia + " Días");
     }
 }
+
